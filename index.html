@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="The Formidable Tutoring Community — home page" />
+  <title>The Formidable Tutoring Community — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- SITE HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Formidable Tutoring</a>
+
+      <!-- Mobile toggle -->
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">
+        ☰ <span class="sr-only">Toggle navigation</span>
+      </button>
+
+      <nav id="mainNav" class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Welcome to The Formidable Tutoring Community</h1>
+        <p class="lead">Personalized tutoring in English and Science for students who want to excel.</p>
+        <div class="hero-actions">
+          <a class="btn" href="services.html">Explore Services</a>
+          <a class="btn outline" href="contact.html">Join Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features container" aria-labelledby="features-heading">
+      <h2 id="features-heading">What we offer</h2>
+      <div class="grid features-grid">
+        <article class="card">
+          <h3>Personalized Tutoring</h3>
+          <p>One-on-one sessions that focus on each student’s needs and pace.</p>
+        </article>
+        <article class="card">
+          <h3>Group Study</h3>
+          <p>Collaborative sessions to boost learning through peer discussion.</p>
+        </article>
+        <article class="card">
+          <h3>Online Resources</h3>
+          <p>Videos, practice exercises and study guides you can access anytime.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- LATEST UPDATES (simple dynamic example) -->
+    <section class="updates container" aria-labelledby="updates-heading">
+      <h2 id="updates-heading">Latest Updates</h2>
+      <ul id="updatesList" class="updates-list">
+        <!-- JS will inject updates here (see js/main.js) -->
+      </ul>
+      <button id="loadUpdates" class="btn small">Load sample updates</button>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Tutor Adesanya Ayomide Precious. All rights reserved.</p>
+      <p><a href="privacy.html" hidden>Privacy (placeholder)</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

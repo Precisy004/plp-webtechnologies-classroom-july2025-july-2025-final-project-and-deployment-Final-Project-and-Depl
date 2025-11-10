@@ -1,0 +1,71 @@
+/* ==============
+   PROJECT STYLES (Student-friendly, professional)
+   ============== */
+
+/* Basic reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: #f6f8fb; color: #0b2b23; }
+
+/* Container to center content */
+.container { width: 92%; max-width: 1000px; margin: 24px auto; }
+
+/* Header */
+.site-header { background: #0f4e3a; color: #fff; padding: 16px 0; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap: 12px; width:92%; max-width:1000px; margin: 0 auto; }
+.logo { color:#fff; text-decoration:none; font-weight:700; font-size:1.05rem; }
+
+/* Navigation */
+.main-nav ul { list-style:none; display:flex; gap:12px; padding:0; margin:0; }
+.main-nav a { color:#fff; text-decoration:none; padding:6px 8px; border-radius:6px; }
+.nav-toggle { display: none; background:transparent; border:none; color:#fff; font-size:18px; cursor:pointer; }
+
+/* Hero styles are applied in index page section. */
+/* Sections */
+section { background:#fff; border-radius:8px; padding:18px; margin-bottom:20px; box-shadow: 0 6px 18px rgba(12,28,18,0.06); transition: transform .18s ease, box-shadow .18s ease; }
+section:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(12,28,18,0.08); }
+
+/* Buttons */
+.btn { display:inline-block; background: linear-gradient(180deg,#12684f,#0f543f); color: #fff; padding:8px 14px; text-decoration:none; border-radius:8px; border:none; cursor:pointer; font-weight:600; }
+.btn.outline, .action-btn.outline { background: transparent; color: #12684f; border: 1px solid #12684f; }
+.btn.small { padding:6px 8px; font-size:0.95rem; }
+
+/* Cards / grid */
+.grid { display:grid; gap:14px; }
+.features-grid { grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+.services-grid { grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); }
+.card, .service-card { padding:14px; border-radius:8px; background: #fafafa; border:1px solid #e6efee; }
+
+/* Highlight box */
+.highlight { border-left:4px solid #11674f; padding-left:12px; background:#fbfdfc; }
+
+/* Small UI helpers */
+.calculator input[type="number"] { padding:8px; border-radius:6px; border:1px solid #dfeaeb; width:100%; }
+.calculator .result { margin-top:10px; font-weight:600; }
+
+/* Form */
+form label { display:block; margin-top:12px; font-weight:600; }
+input[type="text"], input[type="email"], textarea { width:100%; padding:10px; border-radius:6px; border:1px solid #e6efee; margin-top:6px; }
+.form-actions { margin-top:12px; display:flex; gap:10px; align-items:center; }
+
+/* Updates list */
+.updates-list { list-style: none; padding-left: 0; margin-top: 8px; }
+.updates-list li { padding:8px; border-radius:6px; background:#f8fbfa; border:1px solid #eef6f4; margin-bottom:8px; }
+
+/* Footer */
+.site-footer { background:#0f4e3a; color:#fff; padding:12px 0; margin-top:18px; text-align:center; }
+
+/* Accessibility hide for sr-only text */
+.sr-only { position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden; }
+
+/* ====================
+   Responsive adjustments
+   ==================== */
+@media (max-width: 860px) {
+  .main-nav { display:none; }
+  .nav-toggle { display:inline-block; }
+  .header-inner { gap:8px; padding:0 12px; }
+}
+@media (max-width: 520px) {
+  .calculator { grid-template-columns:1fr; }
+  .container { width:96%; }
+}
